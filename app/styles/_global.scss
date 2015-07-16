@@ -1,0 +1,55 @@
+
+body{
+  font: 12px/1.1em Arial,Helvetica,sans-serif;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+*{
+  border:0;
+  outline:none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+a::-moz-focus-inner {
+  border:0;
+  outline:none;
+}
+
+h1,h2,h3,h4,p{
+  margin: 0;
+  font-weight: normal;
+}
+h1,h2,h3,h4{
+  text-transform: uppercase;
+}
+h2{
+  font-family: $font-knockout27,$font-stack;
+}
+h3{
+  font-family: $font-effra-reg,$font-stack;
+}
+h4{
+  font-family: $font-effra-medium,$font-stack;
+}
+a{
+  text-decoration: none;
+  outline: none;
+  color: #000;
+}
+
+input[type="text"], input[type="number"]{
+  border: 0;
+  background-color: #fff;
+  padding: 10px;
+  height: 35px;
+}
+
+section{
+  padding: 10px;
+}
+

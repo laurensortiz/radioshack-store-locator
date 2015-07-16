@@ -1,0 +1,44 @@
+/*
+== Hero Home Styles ==
+*/
+.heroHome{
+  @include retina-background("../images/bannerHome_hex.png","../images/bannerHome_hex@2x.png",133px,162px);
+  background-position: 40% 74px;
+  padding-top: 10px;
+  position: relative;
+
+  .info{
+    text-align: center;
+    h2{
+      @include font-size(27,23,69);
+      color: $titleGray;
+      margin-bottom: 5px;
+    }
+    .sub-title{
+      font-family: $font-effra-reg, $font-stack;
+      color: $textGray;
+      @include font-size(12,15,12);
+    }
+
+  }
+
+  figure{
+    float: right;
+    margin-right: 20px;
+    margin-top: 13px;
+  }
+  .cta-brand{
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    .brand-logo{
+      margin-top: 15px;
+      float: left;
+    }
+  }
+
+
+
+}

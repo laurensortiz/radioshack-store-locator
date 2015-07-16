@@ -1,0 +1,62 @@
+/*
+== List Products Home Styles ==
+*/
+.listProductHome{
+
+  .product{
+
+    margin-bottom: 20px;
+    figure, .detail{
+      display: inline-block;
+      vertical-align: top;
+    }
+    figure{
+      width: 30%;
+      padding-bottom: 8px;
+      text-align: center;
+      background: url(../../images/shadow_phone.gif) no-repeat bottom;
+    }
+    .detail{
+      width: 60%;
+      padding-left: 5px;
+      color: #000;
+      h4{
+        color: $titleGrayH4;
+        @include font-size(15,17,16);
+      }
+      .contract{
+        @include font-size(12,8,16);
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      .amount-sale,.amount-save{
+        @include font-size(15,15,16);
+        display: inline-block;
+        color: $textGrayLight;
+      }
+      .amount-sale{
+        margin-right: 10px;
+      }
+      .cta-brands{
+        img, a{
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .cta{
+        margin: 10px 0;
+        font-family: $font-effra-reg,$font-stack;
+        @include font-size(15,13,12);
+        color: $textGrayLight;
+        padding-left: 20px;
+        &:after{
+          width: 6px;
+          height: 12px;
+          position: relative;
+          top: 2px;
+        }
+      }
+    }
+  }
+
+}

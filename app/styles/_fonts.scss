@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////
+// FONTS
+//
+// To use Effra in a page use the @include rsk-font-face() mixin.
+// Uncomment the below lines to gain access to that Effra font style.
+@include rsk-font-face($font-effra-reg);
+@include rsk-font-face($font-effra-medium);
+// @include rsk-font-face($font-effra-medium-italic);
+// @include rsk-font-face($font-effra-bold);
+// @include rsk-font-face($font-effra-bold-italic);
+// @include rsk-font-face($font-effra-italic);
+//
+// To use Knockout, simply set the font-family property to one of the
+// knockout variables
+//
+// Font stack
+// In cases where a font doesn't load, we need to add a back up font stack.
+// Include @font-stack when defining the font-family:
+// selector {
+//  font-family: $font-effra-bold, $font-stack;
+// }
+///////////////////////////////////////////////////
+

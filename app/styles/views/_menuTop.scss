@@ -1,0 +1,150 @@
+/*
+== Menu Top Styles ==
+*/
+.main-menu{
+  float: right;
+  .icon{
+    padding: 15px 40px;
+    height: 56px;
+    position: relative;
+    &.active{
+      background-color: #dcdcdc;
+    }
+
+    &:after{
+      @include pseudoElement(1,40);
+      background-color: #808285;
+      position: absolute;
+      right: 0;
+      top: 8px;
+    }
+
+  }
+  .icon:last-child:after{
+    display: none;
+  }
+
+}
+
+.menuTop-detail{
+
+  .sub-content{
+    padding: 10px;
+    background-color:#dcdcdc ;
+  }
+  //Search Box
+  .search-content{
+    position: relative;
+    input[type="text"]{
+      width: 100%;
+      height: 35px;
+      padding-right: 53px;
+    }
+    button{
+      background-color: $orange;
+      width: 43px;
+      height: 35px;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: $font-effra-reg, $font-stack;
+      @include font-size(16,auto,12);
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    .clearInput{
+      position: absolute;
+      top: 20px;
+      right: 63px;
+      width: 12px;
+      height: 17px;
+      background: gray;
+    }
+  }
+  //Sub Menu Box
+  .submenu-content{
+    a{
+      display: table;
+      width: 25%;
+      vertical-align: middle;
+      text-align: center;
+      min-height: 35px;
+      float: left;
+      font-family: $font-effra-reg,$font-stack;
+      color: #959595;
+      text-decoration: none;
+      cursor: pointer;
+      @include font-size(14,15,12);
+      border-left: 1px solid #959595;
+
+      span{
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      &:first-child{
+        border-left: 0;
+      }
+      &:hover{
+        color: $orange;
+      }
+    }
+  }
+  //Store Locator
+  .locator-content{
+    .find-by-geo, .find-by-zipcode{
+      @include inline-block;
+      vertical-align: top;
+    }
+    .find-by-geo{
+      width: 55%;
+      a{
+        display: table-cell;
+        vertical-align: middle;
+        height: 35px;
+        color:#959595;
+        @include font-size(15,14,12);
+        font-family: $font-effra-reg,$font-stack;
+        cursor:pointer;
+        position: relative;
+
+        &:before{
+          @include pseudoElement(19,19);
+          position: absolute;
+          left: 123px;
+          top: 9px;
+          background-color: red;
+        }
+
+        &:active,&:hover{
+          color: $orange;
+        }
+      }
+    }
+    .find-by-zipcode{
+      width: 45%;
+      position: relative;
+      input[type="number"]{
+        width: 100%;
+        padding-right: 46px;
+      }
+      button{
+        background-color: $orange;
+        width: 44px;
+        height: 35px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: $font-effra-reg, $font-stack;
+        @include font-size(16,auto,12);
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        &:disabled{
+          background-color: $ctaGray;
+        }
+      }
+    }
+  }
+}

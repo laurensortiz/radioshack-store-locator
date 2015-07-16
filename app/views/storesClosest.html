@@ -1,0 +1,26 @@
+<div class="stores-Closest-container" ng-controller="StoresClosestCtrl">
+  <div class="store" ng-repeat="store in storesClosest">
+    <h3><span class="store-name">{{store.name}}</span></h3>
+    <div class="info clearfix">
+      <div class="col left">
+        <p class="location row">
+          <span class="address2" >{{store.address}}</span><br/>
+          <span class="city">{{store.city}}</span>,<span class="country-code">{{store.countryCode}} </span><span class="postal-code">{{store.postalCode}}</span>
+        </p>
+        <p class="distance row">~{{store.distance | number:2}} Miles</p>
+        <p class="phone row">Phone: <a href="tel:{{store.phoneAreaCode}}{{store.phoneExchange}}{{store.phoneStation}}" title="">(<span class="area-code">{{store.phoneAreaCode}}</span>) <span class="exchange">{{store.phoneExchange}}</span>-<span class="station">{{store.phoneStation}}</span></a></p>
+        <p class="hours">
+          <span class="week">Open today {{store.openingTime}} - {{store.closingTime}}</span>
+        </p>
+      </div>
+      <div class="col right">
+        <div class="map-google">
+          <a target="_blank" ng-href="https://www.google.com/maps/place/RadioShack/@{{store.coordinatesLatitude}},{{store.coordinatesLongitude}},17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x3154a53cf7462275?hl=en" title="Drive Here">
+            <img src="http://maps.googleapis.com/maps/api/staticmap?center={{store.coordinatesLatitude}},{{store.coordinatesLongitude}}&zoom=14&size=145x100&sensor=false">
+          </a>
+        </div>
+        <a class="cta" target="_blank" ng-href="https://www.google.com/maps/place/RadioShack/@{{store.coordinatesLatitude}},{{store.coordinatesLongitude}},17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x3154a53cf7462275?hl=en" title="Drive Here">Drive Here</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+/*
+@Author: Laurens OB
+Project: RadioShack - Mobile Commerce
+Date: may 2014
+*/
+
+
+//
+// Let's call the others style sheets
+//
+@import '_normalize';
+@import '_animation';
+@import '_variables';
+@import '_mixins';
+@import '_helper';
+@import '_fonts';
+@import '_global';
+@import '_header';
+@import '_footer';
+@import 'views/_home';
+
+//Pages
+@import 'views/_home';
+@import 'views/_menuTop';
+@import 'views/_storesClosest';
+//Partials
+@import 'partials/_heroHome';
+@import 'partials/_listProductsHome';

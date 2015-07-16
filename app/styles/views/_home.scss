@@ -1,0 +1,33 @@
+/*
+== Home Styles ==
+*/
+.hero{
+
+  &:before{
+    display: block;
+    width: 100%;
+    height: 79px;
+    position: absolute;
+    left: 0;
+    top: -6px;
+    z-index: -1;
+    content: "";
+    background: #dcdcdc; /* Old browsers */
+    background: -moz-linear-gradient(top,  #dcdcdc 63%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(63%,#dcdcdc), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dcdcdc 63%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dcdcdc 63%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dcdcdc 63%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dcdcdc 63%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+  }
+  &:after{
+    @include pseudoElement(55,90);
+    position: absolute;
+    right: 0;
+    bottom: -47px;
+    @include retina-background("../images/bannerHome_hex_r.png","../images/bannerHome_hex_r@2x.png",55px,90px);
+  }
+
+}

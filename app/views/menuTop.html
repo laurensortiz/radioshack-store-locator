@@ -1,0 +1,29 @@
+<div class="menuTop-detail">
+  <!--
+  <div class="search-content sub-content" ng-show="searchBox">
+    <form>
+      <input ng-model="searchQuery" type="text" placeholder="Search input here search..." />
+      <button>Go</button>
+      <button class="clearInput" ng-show="searchQuery.length" ng-click="searchQuery = ''" />
+    </form>
+  </div>
+  -->
+
+  <div class="locator-content sub-content clearfix" ng-show="locatorBox">
+    <div class="find-by-geo">
+      <a class="geo-location" ng-href="" title="Find closest store">Find closest store</a>
+    </div>
+    <div class="find-by-zipcode">
+      <form name="findStoreByZip" ng-submit="findStore(zipcode);">
+        <input ng-model="zipcode" ng-minlength="5" required ng-pattern="" type="number" name="zipcode" value="" placeholder="Or Enter ZIP Code"  />
+        <button ng-disabled="findStoreByZip.$invalid">Go</button>
+      </form>
+    </div>
+  </div>
+  <div class="submenu-content sub-content clearfix" ng-show="submenuBox">
+    <a ng-href="" title="Weekly Ad"><span>Weekly Ad</span></a>
+    <a ng-href="" title="Shop All Departments"><span>Shop All Department</span></a>
+    <a ng-href="" title="24/7 CostumerService"><span>24/7 Costumer Service</span></a>
+    <a ng-href="" title="Lang"><span>Lang ES</span></a>
+  </div>
+</div>

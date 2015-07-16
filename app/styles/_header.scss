@@ -1,0 +1,20 @@
+/*
+== Header Styles ==
+*/
+.main-header{
+  padding-top: 55px;
+  .stick{
+    background-color: #fff;
+    min-height: 55px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+  }
+  .logo{
+    padding: 4px 10px;
+    display: inline-block;
+    float: left;
+  }
+}

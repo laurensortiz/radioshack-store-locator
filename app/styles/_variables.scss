@@ -1,0 +1,56 @@
+///////////////////////////////////////////////////
+//
+// Project Variables
+//
+///////////////////////////////////////////////////
+
+//
+// set the base location of the fonts for dotcom
+//
+$base-font-url: "http://www.radioshack.com/graphics/uc/rsk/USContent/HTML/Images/fonts/";
+
+//
+// Effra via radioshack.com
+//
+$font-effra-prepend: "dalton_maag_-_";
+$font-effra-append: "-webfont";
+$font-effra-reg: "effra";
+$font-effra-medium: "effra_medium";
+$font-effra-medium-italic: "effra_medium_italic";
+$font-effra-bold: "effra_bold";
+$font-effra-bold-italic: "effra_bold_italic";
+$font-effra-italic: "effra_italic";
+
+//
+// Knockout via cloud.typography.com
+//
+
+$font-knockout26: "Knockout 26 A", "Knockout 26 B";
+$font-knockout27: "Knockout 27 A", "Knockout 27 B";
+
+//
+// declares the rest of the font stack
+// usage:
+// selector {
+//  font-family: @font-Reg, @font-stack;
+// }
+//
+$font-stack:"arial, helvetica, sans-serif";
+
+//
+// Sprite Image Path
+//
+$normalSizeSprite : "../images/main_sprite.png";
+$retinaSizeSprite : "../images/main_sprite@2x.png";
+
+//
+// Colors
+//
+$btnGray : #39342f;
+$btnOrange : #e76453;
+$ctaGray : #959595;
+$titleGrayH4 : #959595;
+$textGray : #808285;
+$textGrayLight : #959595;
+$titleGray : #808285;
+$orange : #e76453;
